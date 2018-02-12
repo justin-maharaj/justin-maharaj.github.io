@@ -87,7 +87,7 @@
 
 
       function writeToCenter(str) {
-        $(".myConsole").append(str);
+        $(".myConsole").append("<br>"+str);
 
       }
 
@@ -95,20 +95,38 @@
 
       function addNumbers(num1, num2){
 
-        var result = num1 + num2;
+        //var result = num1 + num2;
 
-        return result;
-
+        //return result;
+        return num1 + num2; // exact same thing but the code is more efficient
       }
+
 
       var firstNumber = 10;
       var secondNumber = 15;
 
       var thirdNumber = addNumbers(firstNumber, secondNumber);
 
-      writeToCenter("third number is "+thirdNumber);
+      writeToCenter("third number is  "+thirdNumber);
+
+      writeToCenter("another number is  "+addNumbers(6,9));
+
+      //declare empty object with {}
+          var myPhone = {
+      // key: value
+
+      "color":"black",
+      "brand":"apple",
+      "screen":"retina",
+      "price":"$600"
+      };
+
+
+      writeToCenter("here is my object "+myPhone);
+      //
 
     })
+
   </script>
 
 
