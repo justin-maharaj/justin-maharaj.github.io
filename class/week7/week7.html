@@ -47,6 +47,35 @@
   text-align: center;;
 }
 
+ul li{
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+ul li a, ul li a:hover{
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.header{
+line-height: 100px;
+}
+
+.flexSpaceAround{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+
+
 
   </style>
 </head>
@@ -64,8 +93,13 @@
     </div>
 
     <div class="row">
-      <div class="col-md-12 height3 randomColor">
-
+      <div class="col-md-12 height3 header">
+        <ul class="flexSpaceAround">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
 
     </div>
