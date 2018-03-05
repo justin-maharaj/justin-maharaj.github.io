@@ -1,0 +1,48 @@
+[
+
+{
+"name": "OK Computer",
+"yearOfRelease": 1997,
+"genre":"Alternative Rock",
+"numberOfSongs": 12,
+"label": "Capitol Records",
+"single":"Paranoid Android"
+},
+
+{
+"name": "In Rainbows",
+"yearOfRelease": 2007,
+"genre":"Alternative Rock",
+"numberOfSongs": 10,
+"label": "XL Recordings",
+"single" : "Weird Fishes"
+},
+
+{
+"name": "Kid A",
+"yearOfRelease": 2000,
+"genre":"Electronica",
+"numberOfSongs": 10,
+"label": "Capitol Records",
+"single": "Everything In Its Right Place"
+},
+
+{
+"name": "Amnesiac",
+"yearOfRelease": 2001,
+"genre":"Experimental Rock",
+"numberOfSongs": 11,
+"label": "Capitol Records",
+"single": "Pyramid song"
+},
+
+{
+"name": "Hail to the Theif",
+"yearOfRelease": 2003,
+"genre":"Alternative Rock",
+"numberOfSongs": 14,
+"label": "Capitol Records",
+"single": "There There"
+}
+
+]
