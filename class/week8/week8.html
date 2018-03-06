@@ -34,35 +34,37 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script>
 
-    //get the JSON
-
-    var url = "https://justin-maharaj.github.io/class/week8/assets/myJson.json";
-
-    $.getJSON(url).done(function(data){
-    console.log("success! ");
-    console.dir(data);
-    var dataHtml="";
-    for(var i=0;i<data.length;i++) {
-      dataHtml+="<div>"+data[i].name+"</div>" +
+      <script>
+          //get the JSON from a repo
+          var url = "https://justin-maharaj.github.io/class/week8/assets/myJson.json" ;
+          $.getJSON(url).done(function(data) {
+            //once we have json do the following:
+            console.log("success! ");
+            console.dir(data);
+            var dataHtml   = "";
 
 
-}
-
-    $(document).ready(function(){
-      $(".output").html(dataHtml);
-      })
-
-
-
-    }).fail(function(data){
-      console.log("failed! "+JSON.stringify(data));
-    });
-
-      </script>
-
-
+            //loop thru the data
+            for (var i = 0; i < data.length; i++) {
+              dataHtml+="<div>"
+              +data[i].name +
+              data[i].yearOfRelease +
+              data[i].genre +
+              data[i].numberOfSongs +
+              data[i].label +
+              data[i].single 
+              "</div>";
+            }
+            //when the document is ready
+            $(document).ready(function() {
+              //write it to the screen
+              $(".output").html(dataHtml);
+            })
+          }).fail(function(data) {
+            console.log("failed! " + JSON.stringify(data));
+          });
+        </script>
 
 
 
