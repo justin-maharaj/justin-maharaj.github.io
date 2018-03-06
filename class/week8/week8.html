@@ -46,16 +46,9 @@
     var dataHtml="";
     for(var i=0;i<data.length;i++) {
       dataHtml+="<div>"+data[i].name+"</div>" +
-    "<div>"+data[i].yearOfRelease+"</div>" +
-      "<div>"+data[i].genre+"</div>" +
-        "<div>"+data[i].numberOfSongs+"</div>" +
-          "<div>"+data[i].single+"</div>" +;
+
 
 }
-
-
-
-
 
     $(document).ready(function(){
       $(".output").html(dataHtml);
