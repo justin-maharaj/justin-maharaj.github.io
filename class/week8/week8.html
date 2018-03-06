@@ -42,20 +42,29 @@
             //once we have json do the following:
             console.log("success! ");
             console.dir(data);
-            var dataHtml   = "";
+            var dataHtml="<table class='table table-striped table-hover'>" +
+            "<tr>"+
 
+            "<th>Name</th>"+
+            "<th>Year Of Release</th>"+
+            "<th>Genre</th>"+
+            "<th>Number of Songs</th>"+
+            "<th>Label</th>"+
+            "<th>Single</th>"+
+            "</tr>";
 
-            //loop thru the data
-            for (var i = 0; i < data.length; i++) {
-              dataHtml+="<div>"
-              +data[i].name +
-              data[i].yearOfRelease +
-              data[i].genre +
-              data[i].numberOfSongs +
-              data[i].label +
-              data[i].single 
-              "</div>";
-            }
+            for (var i=0;i<data.length;i++){
+                    console.log("i "+i);
+                    dataHtml+="<tr>"+
+                    "<td>"+data[i].name+"</td>"+
+                    "<td>"+data[i].yearOfRelease+"</td>"+
+                    "<td>"+data[i].genre+"</td>"+
+                    "<td>"+data[i].numberOfSongs+"</td>"+
+                    "<td>"+data[i].label+"</td>"+
+                    "<td>"+data[i].single+"</td>"+
+                    "</tr>";
+                  }
+
             //when the document is ready
             $(document).ready(function() {
               //write it to the screen
