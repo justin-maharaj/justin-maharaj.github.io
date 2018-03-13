@@ -30,9 +30,16 @@
       align-items: center;
       }
 
+
+
       .wi{
         font-size: 3em;
       }
+
+      h1 {
+        font-size: 100px;
+      }
+
 
       .centerText{
         text-align: center;
@@ -46,11 +53,13 @@
         height: 600px;
       }
 
+
       ul li{
         text-transform: uppercase;
         list-style-type: none;
         margin: 0;
         padding: 0;
+      color: red;
       }
 
 
@@ -59,12 +68,18 @@
       }
 
       li a:hover {
-        background-color: blue;
-        color: white;
+
+        color: green;
+    }
+
+    body {
+      background-color: #blue;
     }
 
       .header{
       line-height: 100px;
+      background-color: black;
+      font-size: 21px;
       }
       .flexSpaceAround{
         display: flex;
@@ -79,9 +94,7 @@
         flex-direction: column;
       }
 
-      .blueBG{
-      background-color: blue;
-      }
+
 
       .paddingLeft{
       padding-left: 60px;
@@ -94,13 +107,11 @@
 
 <body>
 
+
   <div class="container">
 
     <div class="row">
-      <div class="col-md-12 centerText">
-<h1>Toronto Weather</h1>
-      </div>
-    </div>
+
 
     <div class="row">
       <div class="col-md-12 height1 header">
@@ -112,8 +123,13 @@
         </ul>
 
       </div>
+
     </div>
 
+    <div class="col-md-12 ">
+<h1>Toronto Weather</h1>
+    </div>
+  </div>
 
     <div class="row">
       <div class="col-md-12 weatherDiv">

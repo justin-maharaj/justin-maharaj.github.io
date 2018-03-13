@@ -33,7 +33,7 @@
 
     }
 
-    .greyBackground{
+    .greyBackground {
       background-color: #A9A9A9;
     }
   </style>
@@ -81,12 +81,12 @@
       $(document).ready(function() {
         $(".myHtml").html(html);
 
-///write an event to handle a click (event-handler functions)
-//event for all buttons; turn on click, execute function
-$(".itemButton").on("click", function(){
-  console.log("click");
-$(this).closest(".myItem").toggleClass("greyBackground");
-});
+        ///write an event to handle a click (event-handler functions)
+        //event for all buttons; turn on click, execute function
+        $(".itemButton").on("click", function() {
+          console.log("click");
+          $(this).closest(".myItem").toggleClass("greyBackground");
+        });
 
       })
     }
