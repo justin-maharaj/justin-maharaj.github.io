@@ -28,21 +28,20 @@
   }
 
   .lotteryBall{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     text-align: center;
-    line-height: 50px;
+    line-height: 100px;
     color: #fff;
     border-radius: 100%;
     float: left;
     background-color: grey;
     margin: 10px;
     font-weight: 500;
-    box-shadow: 1px 1px 0.5px
   }
 
 .match{
-  background-color: green;
+  background-color: blue;
 }
 
 </style>
@@ -89,8 +88,8 @@
 
       var winningTicket = getRandomArray();
       var myTicket = getRandomArray();
-      $(".myOutput").append("winningTicket " + winningTicket.join(";") + "<br>");
-      $(".myOutput").append("myTicket " + myTicket.join(";") + "<br>");
+      $(".myOutput").append("Winning Ticket: " + winningTicket.join(";") + "<br>");
+      $(".myOutput").append("My Ticket: " + myTicket.join(";") + "<br>");
       writeArrayToDiv(winningTicket, ".winningTicket");
       writeArrayToDiv(myTicket, ".myTicket");
       compareTickets();
