@@ -78,6 +78,7 @@
           html += "<div data-id='" + jsonObj + "' class='itemContainer'>";
           for (var key in d[jsonObj]) {
             if (key === "itemId") {
+              console.log("key"+key)
               continue;
             }
             if (d[jsonObj][key].indexOf("github") !== -1) {

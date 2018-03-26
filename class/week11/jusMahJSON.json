@@ -3,31 +3,31 @@
     "1": {
       "itemId": 1,
       "jusMahChocolate": "Aero",
-      "jusMahCalories": 250,
+      "jusMahCalories": "250",
       "jusMahImgUrl": "justin-maharaj.github.io/class/week11/img/aero.png"
     },
     "2": {
       "itemId": 2,
       "jusMahChocolate": "MnMs",
-      "jusMahCalories": 300,
+      "jusMahCalories": "300",
       "jusMahImgUrl": "justin-maharaj.github.io/class/week11/img/mnms.png"
     },
     "3": {
       "itemId": 3,
       "jusMahChocolate": "KitKat",
-      "jusMahCalories": 325,
+      "jusMahCalories": "325",
       "jusMahImgUrl": "justin-maharaj.github.io/class/week11/img/kitKat.jpg"
     },
     "4": {
       "itemId": 4,
       "jusMahChocolate": "Smarties",
-      "jusMahCalories": 300,
+      "jusMahCalories": "300",
       "jusMahImgUrl": "justin-maharaj.github.io/class/week11/img/smarties.jpg"
     },
     "5": {
       "itemId": 5,
       "jusMahChocolate": "MiniEggs",
-      "jusMahCalories": 400,
+      "jusMahCalories": "400",
       "jusMahImgUrl": "justin-maharaj.github.io/class/week11/img/miniEggs.jpeg"
     }
   }
