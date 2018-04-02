@@ -1,4 +1,5 @@
 /*header*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
 body {
@@ -7,13 +8,14 @@ body {
   display: none;
 }
 
-.flexSpaceAround{
+.flexSpaceAround {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 /*header*/
+
 .logo {
   font-family: 'Open Sans', sans-serif;
   color: #555;
@@ -27,9 +29,10 @@ body {
   text-shadow: #EDEDED 3px 2px 0;
   position: relative;
 }
+
 .logo:after {
-  text-align:center;
-  content:"チンドウグドトコム";
+  text-align: center;
+  content: "チンドウグドトコム";
   position: absolute;
   left: 8px;
   top: 32px;
@@ -41,66 +44,79 @@ body {
   display: block;
   text-shadow: none;
 }
+
 /*footer*/
-hr{
-  border-top:1px solid rgba(0,0,0,.1);
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, .1);
 }
-.footer span{
+
+.footer span {
   margin: 3em;
 }
 
 /**/
-.ad img{
-  width:100%;
+
+.ad img {
+  width: 100%;
   margin-top: 3em;
   margin-bottom: 3em;
 }
+
 /*selectContainer*/
-.selectContainer{
+
+.selectContainer {
   width: 50%;
   margin: 0 auto;
   padding-top: 3em;
   padding-bottom: 2em;
 }
-select{
+
+select {
   width: auto;
 }
 
 /*output*/
-.itemContainer{
+
+.itemContainer {
   width: 200px;
 }
 
-.output{
+.output {
   flex-wrap: wrap;
 }
 
-
-.imageContainer{
+.imageContainer {
   background-color: #333;
   width: 200px;
   overflow: hidden;
 }
-.marAndTitle{
+
+.marAndTitle {
   text-align: center;
-    text-transform: uppercase;
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 16px;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px;
 }
-.marAndPrice{
+
+.marAndPrice {
   text-align: center;
   font-style: italic;
   font-size: 11px;
 }
-.checkoutContainer{
-  width:66%;
+
+.checkoutContainer {
+  width: 66%;
 }
-.buttonContainer{
+
+.buttonContainer {
   text-align: center;
-    padding: 10px;
+  padding: 10px;
 }
+
 /*mark 2*/
+
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 .proAndTitle {
   background-color: #333;
@@ -115,8 +131,9 @@ select{
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.proAndPrice{
-  background-color:#fff;
+
+.proAndPrice {
+  background-color: #fff;
   color: #333;
   font-family: Arvo;
   font-weight: bold;
@@ -125,10 +142,10 @@ select{
   font-size: 20px;
   padding-top: 16px;
   padding-bottom: 16px;
-  border:1px solid #333;
+  border: 1px solid #333;
 }
 
-.confirmationMessage{
+.confirmationMessage {
   font-weight: bold;
   text-align: center;
   font-size: 22px;
