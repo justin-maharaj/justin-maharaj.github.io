@@ -157,7 +157,38 @@ var spriteImages = [{
     "width": 4800,
     "height": 200,
     "name": "cat"
-  }
+  },
+
+
+
+  {
+    "spriteMapUrl": "https://sluu01.github.io/class/week12/animation/images/iceCream2.png",
+    "numFrames": 5,
+    "width": 2500,
+    "height": 1259,
+    "name": "dessert"
+  },
+
+
+{
+    "spriteMapUrl":"https://biancabottos.github.io/class/week12/animation/images/sun.png",
+    "numFrames": 6,
+    "width": 500,
+    "height": 100,
+    "name": "sun"
+  },
+
+  {
+    "spriteMapUrl": "images/bball.png",
+    "numFrames": 5,
+    "width": 1487,
+    "height": 256,
+    "name": "basketball"
+  },
+
+
+
+
 ];
 var animations = []; //an array to hold the currently existing sprite obects
 var maxAnimations = spriteImages.length; //how many animations we want on the screen at any one time
