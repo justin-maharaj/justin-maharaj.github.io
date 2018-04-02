@@ -126,18 +126,29 @@
 // $(".buyButton").on("click",function(){
 //   console.log("clicked buy!");
 // })
-$("body").on("click","buyButton",function(){
+$("body").on("click",".buyButton", function(){
   console.log("clicked buy!");
+  //closest goes up the tree to find the first match
+  var thisItem = $(this).closest(".itemContainer");
+  var itemId = $(this).attr("data-id");
 
-var thisItem = $(this).closest(".itemContainer");
-var itemId = $(this).attr("data-id");
 
-//write this item + form html
+//find mean go down the tree
+thisItem.find(".buttonContainer").remove();
+
+  //write this item + form html
+var html = "<div data-id='"+itemId+"' class='itemContainer'>"+thisItem.html()+"</div>"+formHtml;
+
+$(".output").html(html);
 
 //prevent multiple click events
-return false;
-
+  return false;
 })
+
+$(".logo").on("click", function(){
+  window.location.reload();
+})
+
 
     }//end initEvents
 
