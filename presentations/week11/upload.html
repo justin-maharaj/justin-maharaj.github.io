@@ -25,6 +25,39 @@
       text-align: right;
       padding: 10px;
     }
+
+    .flexSpaceAround{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+
+
+ul li{
+  list-style: none;
+  text-transform: uppercase;
+  color: white;
+}
+ul li a, ul li a:hover{
+
+  color: white;
+  font-size: 22px;
+}
+.header{
+line-height: 75px;
+}
+.centerText{
+  text-align: center;
+}
+
+.height1 {
+  height: 75px;
+}
+
+.bgcolor{
+  background-color: black;
+}
+
   </style>
 
   <!-- Bootstrap -->
@@ -40,7 +73,21 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container bgcolor">
+
+    <div class="row">
+      <div class="col-md-12 height1 header">
+        <nav>
+          <ul class="flexSpaceAround">
+            <li> <a href="#">ABOUT</a> </li>
+            <li> <a href="#">BLOG</a> </li>
+            <li> <a href="#">CITIES</a> </li>
+            <li> <a href="#">CONTACT</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-md-12 cardSection">
       </div>
@@ -58,72 +105,77 @@
     <script>
 
 
-      //These are your Object Arrays
-      var arrayTopic = [
+    //These are your Object Arrays
+        var arrayTopic = [{
+            "name": "Toronto",
+            "population": "2 million",
+            "country": "Canada",
+            "language": "French and English",
+            "more": "More info"
+          },
+          {
+            "name": "Tokyo",
+            "population": "13 million",
+            "country": "Japan",
+            "language": "Japanese",
+            "more": "More info"
+          },
+          {
+            "name": "Paris",
+            "population": "2 million",
+            "country": "France",
+            "language": "French",
+            "more": "More info"
+          },
+          {
+            "name": "London",
+            "population": "8.7 million",
+            "country": "United Kingdom",
+            "language": "English",
+            "more": "More info"
+          },
+          {
+            "name": "Chicago",
+            "population": "2.7 million",
+            "country": "USA",
+            "language": "English",
+            "more": "More info"
+          },
+          {
+            "name": "Sydney",
+            "population": "5 million",
+            "country": "Australia",
+            "language": "English",
+            "more": "More info"
+          }
+        ];
+        $(document).ready(function() {
+          $(".output").html("test output");
+          var html = ""; // This is the Variable to hold the html -> without this, nothing will show up
+          //HERE IS YOUR LOOP
+          /*      Remember that each card needs the following things:
+                  - Gets the user do something such as redirecting to another page (this can be done with buttons, animations, etc.)
+                  - Include and style the image
+                  - Be organized in a specific way (HINT: Flexbox)
+           */
+          for (var i = 0; i < arrayTopic.length; i++) { //change arrayTopic to whatever you
+            html += "<div class='panel panel-default individualCard'>" +
+              //  "<div><img class='img-responsive' src='" + arrayTopic[i].imgUrl + "' /></div>" + //change the red text to the keys in your Array
+              "<div class='cardInfo nameLabel name'>" + arrayTopic[i].name + "</div>" + //change the red text to the keys in your Array
+              "<div class='cardInfo ageLabel'>" + arrayTopic[i].population + "</div>" + //change the red text to the keys in your Array
+              "<div class='cardInfo ownerLabel'>" + arrayTopic[i].country + "</div>" + //change the red text to the keys in your Array
+              "<div class='cardInfo ownerLabel'>" + arrayTopic[i].language + "</div>" +
+              "<div class='itemButton'><button type='button' class='btn btn-default'>" + arrayTopic[i].more + "</button></div>" + //Button Template
+              "</div>";
+          }
+          $(".outputArray").html(html); //outputs the loop onto the html
+        });
+      </script>
 
-	 {
-		"name": "Toronto",
-		"population": "2 million",
-		"country": "Canada",
-		"language": "French and English"
-	},
- {
-		"name": "Tokyo",
-		"population": "13 million",
-		"country": "Japan",
-		"language": "Japanese"
-	},
-	 {
-		"name": "Paris",
-		"population": "2 million",
-		"country": "France",
-		"language": "French"
-	},
-	 {
-		"name": "Amsterdam",
-		"population": "850 thousand",
-		"country": "Netherlands",
-		"language": "Dutch"
-	},
- {
-		"name": "Los Angeles",
-		"population": "3.9 million",
-		"country": "USA",
-		"language": "English"
-
-}
-      ];
-
-      $(document).ready(function() {
-        $(".output").html("test output");
-        var html = ""; // This is the Variable to hold the html -> without this, nothing will show up
-
-        //HERE IS YOUR LOOP
-
-/*      Remember that each card needs the following things:
-        - Gets the user do something such as redirecting to another page (this can be done with buttons, animations, etc.)
-        - Include and style the image
-        - Be organized in a specific way (HINT: Flexbox)
- */
-
-        for (var i = 0; i < arrayTopic.length; i++) { //change arrayTopic to whatever you
-          html += "<div class='panel panel-default individualCard'>" +
-          //  "<div><img class='img-responsive' src='" + arrayTopic[i].imgUrl + "' /></div>" + //change the red text to the keys in your Array
-            "<div class='cardInfo nameLabel'>" + arrayTopic[i].name + "</div>" + //change the red text to the keys in your Array
-            "<div class='cardInfo ageLabel'>" + arrayTopic[i].population + "</div>" + //change the red text to the keys in your Array
-            "<div class='cardInfo ownerLabel'>" + arrayTopic[i].country + "</div>" + //change the red text to the keys in your Array
-            "<div class='cardInfo ownerLabel'>" + arrayTopic[i].language + "</div>" + //change the red text to the keys in your Array
-            "<div class='itemButton'><button type='button' class='btn btn-default'>" + arrayTopic[i].button + "</button></div>" + //Button Template
-            "</div>";
-        }
-        $(".outputArray").html(html); //outputs the loop onto the html
-
-      });
-    </script>
 
 
     <script>
-      //   // THIS IS FOR IF YOU WANT TO GET A JSON FILE FROM ONLINE
+      //   // THIS IS FOR IF THEY WANT TO GET A JSON FILE FROM ONLINE
       //   var url = "https://zabrinabolasco.github.io/class/week8/assets/cities.json" //JSON Link goes here (it's currently a template right now, don't worry about it)
       //   console.log("You need a website — why not do it yourself?"); //message appears so you can test your JavaScript here
       //
